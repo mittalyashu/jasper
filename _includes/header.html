@@ -1,0 +1,18 @@
+<header class="site-header outer" {% if site.cover_image %} style="background-image: url({{site.cover_image}})" {% else %} {% endif
+ %}>
+	<div class="inner">
+		<div class="site-header-content">
+			{% if site.logo != "" %}
+			<div class="site-title">
+				<img class="site-logo" src="{{site.logo}}" alt="{{site.title}}">
+			</div>
+			{% else %}
+			<h1 class="site-title">
+				{{site.title}}
+			</h1>
+			{% endif %}
+			<h2 class="site-description">{{site.description}}</h2>
+		</div>
+		{% include navbar.html %}
+	</div>
+</header>
