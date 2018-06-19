@@ -1,0 +1,15 @@
+<div id="subscribe" class="subscribe-overlay" style="display: none">
+  <a class="subscribe-overlay-close" onclick="hide_subscribe_overlay()"></a>
+  <div class="subscribe-overlay-content">
+    {% if site.logo != "" %}
+      <img class="subscribe-overlay-logo"src="{{site.logo}}" alt="{{site.title}} Logo" />
+    {% else %}
+      <h1 class="subscribe-overlay-site-name">
+        {{site.title}}
+      </h1>
+    {% endif %}
+    <h1 class="subscribe-overlay-title">Subscribe to Ghost</h1>
+    <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+    {% include subscribe-form.html %}
+  </div>
+</div>
