@@ -1,0 +1,229 @@
+@media (max-width: 650px)
+	.author-name-tooltip
+		display: none
+
+@media (min-width: 795px)
+
+	.home-template 
+
+		.post-feed
+
+			.post-card
+				display: flex
+				
+				&:nth-child(6n+1):not(.no-image)
+					flex: 1 1 100%
+					flex-direction: row
+
+					.post-card-image-link
+						position: relative
+						flex: 1 1 auto
+						border-radius: 5px 0 0 5px
+
+						.post-card-image
+							position: absolute
+							width: 100%
+							height: 100%
+
+					.post-card-content
+						flex: 0 1 357px
+
+						.post-card-content-link
+							padding: 30px 40px 0
+
+							.post-card-header
+
+								.post-card-title
+									font-size: 1.8rem
+									margin: 0 0 .5em
+
+							.post-card-description
+
+								p
+									font-size: 1rem
+									margin: 0 0 1.5rem
+													
+						.post-card-meta
+							padding: 0 40px 30px
+
+@media (min-width: 900px)
+	.inner > .post-feed
+		margin-top: -68px
+		padding-top: 0
+
+.post-template
+
+	.site-main
+		padding-bottom: 4vw
+		background: $white
+
+.site-main
+	flex-grow: 1
+
+	.post-card, .post-feed 
+		display: flex
+
+.post-feed 
+	position: relative
+	flex-wrap: wrap
+	margin: 0 -20px
+	padding: 40px 0 0
+
+.post-card
+	+card
+
+	// &:nth-child(6n+1):not(.no-image)
+	// 	flex: 1 1 100%
+	// 	flex-direction: row
+		
+	.post-card-image-link
+		position: relative
+		display: block
+		overflow: hidden
+		border-radius: 5px 5px 0 0
+
+		.post-card-image
+			width: auto
+			height: 200px
+			background: #c5d2d9 no-repeat 50%
+			background-size: cover
+
+	.post-card-content
+		flex-grow: 1
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+		.post-card-content-link
+			position: relative
+			flex-grow: 1
+			display: block
+			padding: 25px 25px 0
+			color: #15171a
+
+			.post-card-header
+
+				.post-card-category
+					display: block
+					margin-bottom: 5px
+					color: #738a94
+					font-size: .8rem
+					line-height: 1.15
+					font-weight: 500
+					letter-spacing: .5px
+					text-transform: uppercase
+
+		.post-card-meta
+			display: flex
+			justify-content: space-between
+			align-items: flex-end
+			padding: 0 25px 25px
+
+			.author-list
+				display: flex
+				flex-wrap: wrap-reverse
+				margin: 0
+				padding: 0
+				list-style: none
+
+				.author-list-item
+					position: relative
+					display: flex
+					flex-shrink: 0
+					margin: 0
+					padding: 0
+
+					&:nth-child(1)
+						z-index: 10
+					
+					&:nth-child(2)
+						z-index: 9
+					
+					&:nth-child(3)
+						z-index: 8
+					
+					&:nth-child(4)
+						z-index: 7
+					
+					&:nth-child(5)
+						z-index: 6
+					
+					&:nth-child(6)
+						z-index: 5
+					
+					&:nth-child(7)
+						z-index: 4
+					
+					&:nth-child(8)
+						z-index: 3
+					
+					&:nth-child(9)
+						z-index: 2
+					
+					&:nth-child(10)
+						z-index: 1
+
+					&:hover
+						.author-name-tooltip
+							opacity: 1.0
+							transform: translateY(0px)
+
+					.author-name-tooltip
+						position: absolute
+						bottom: 105%
+						z-index: 999
+						display: block
+						padding: 2px 8px
+						color: $white
+						font-size: 1rem
+						letter-spacing: .2px
+						white-space: nowrap
+						background: #15171a
+						border-radius: 3px
+						box-shadow: 0 12px 26px rgba(39,44,49,.08), 1px 3px 8px rgba(39,44,49,.03)
+						opacity: 0
+						transition: all .3s cubic-bezier(.4,.01,.165,.99)
+						transform: translateY(6px)
+						pointer-events: none
+
+					.static-avatar
+						width: 34px
+						height: 34px
+
+					.author-profile-image
+						background: #e3e9ed
+						object-fit: cover
+						width: 100%
+						height: 100%
+
+					.moving-avatar, .static-avatar
+						display: block
+						margin-right: 5px
+						overflow: hidden
+						border: 2px solid $white
+						border-radius: 100%
+
+					.author-profile-name
+						font-size: .9rem
+						font-weight: 500
+						align-items: center
+						display: flex
+						letter-spacing: .5px
+						text-transform: uppercase
+
+						a
+							color: #3eb0ef
+
+							&:hover
+								text-decoration: underline
+
+		.reading-time
+			flex-shrink: 0
+			margin-left: 20px
+			color: #738a94
+			font-size: .8rem
+			line-height: 38px
+			font-weight: 500
+			letter-spacing: .5px
+			text-transform: uppercase
+			+reading-time
