@@ -1,0 +1,36 @@
+<nav class="site-nav">
+  <div class="site-nav-left">
+    {% if homepage == false %}
+      <a class="site-nav-logo" href="{{site.url}}">
+        {% if site.logo != "" %}
+          <img src="{{site.logo}}" alt="{{site.title}} Logo" />
+        {% else %}
+          <h1>
+            {{site.title}}
+          </h1>
+        {% endif %}
+      </a>
+    {% endif %}
+    {% include navigation.html %}
+  </div>
+
+  <div class="site-nav-right">
+    <div class="social-links">
+      {% if site.facebook_url %}
+      <a class="social-link social-link-fb" href="{{site.facebook_url}}" target="_blank" rel="noopener">
+        {% include icons/facebook.svg %}
+      </a>
+      {% endif %} {% if site.twitter_url %}
+      <a class="social-link social-link-tw" href="{{site.twitter_url}}" target="_blank" rel="noopener">
+        {% include icons/twitter.svg %}
+      </a>
+      {% endif %}
+    </div>
+    {% if site.subscribe == true %}
+      <a class="subscribe-button" href="#subscribe" onClick="show_subscribe_overlay()">Subscribe</a>
+      {% include subscribe-overlay.html %}
+    {% else %}
+      <a class="rss-button" href="{{site.url}}/feed.xml" target="_blank" rel="noopener">{% include icons/rss.svg %}</a>
+    {% endif %}
+  </div>
+</nav>
