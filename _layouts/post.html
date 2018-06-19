@@ -1,0 +1,103 @@
+---
+layout: default
+---
+
+<body class="post-template">
+	<div class="site-wrapper">
+	{% assign homepage = false %}
+	<header class="site-header outer">
+		<div class="inner">
+			{% include navbar.html %}
+		</div>
+	</header>
+	<main id="site-main" class="site-main outer">	
+		<div class="inner">
+
+			<article class="post-full">
+			
+				<header class="post-full-header">
+					<section class="post-full-meta">
+						<time class="post-full-meta-date" datetime="{{ page.date | date: "%d %b %Y" }}">{{  page.date | date: "%d %b %Y" }}</time>
+						<span class="date-divider">/</span>
+						{% assign category = page.category | split: "-" | join: " " %}
+						<a href="/category/{{page.category}}">{{category}}</a>
+					</section>
+					<h1 class="post-full-title">{{page.title}}</h1>
+				</header>
+			
+				<figure class="post-full-image" style="background-image: url({{page.image|relative_url}})"></figure>
+			
+				<section class="post-full-content">
+					{{content}}
+				</section>
+			
+				<!-- Email subscribe form at the bottom of the page -->
+
+				{% if site.subscribe %}
+				<section class="subscribe-form">
+					<h3 class="subscribe-form-title">Subscribe to {{site.title}}</h3>
+					<p>Get the latest posts delivered right to your inbox</p>
+					{% include subscribe-form.html %}
+				</section>
+				{% endif %}
+			
+				<footer class="post-full-footer">
+			
+					<!-- There are two options for how we display the byline/author-info. If the post has more than one author, we load a specific template from includes/byline-multiple.html, otherwise we just use the default byline. -->
+					
+					{% assign author_name = page.author | split: ", " %}
+					{% assign number_of_authors = author_name | size %}
+
+					{% if number_of_authors < 1 %}
+
+					{% else %}
+						{% include single-author.html %}
+					{% endif %}
+			
+				</footer>
+			
+				<!-- <section class="post-full-comments">
+					If you want to embed comments, this is a good place to do it!
+				</section> -->
+			
+			</article>
+		</div>
+	</main>
+
+	 <!-- Links to Previous/Next posts -->
+	<aside class="read-next outer">
+		<div class="inner">
+			<div class="read-next-feed">
+
+				<!-- If there's a previous post, display it using the same markup included from - includes/card.html -->
+
+				{% if page.previous.url %}
+				{% if page.next.url%}
+					{% include other-post.html %}
+				{% endif %}
+				{% endif %}
+
+				
+				{% if page.previous.url %}
+					{% include card.html url=page.previous.url image=page.previous.image category=page.previous.category title=page.previous.title description=page.previous.description  author=page.previous.author content=page.previous.content %}
+				{% else %}
+					 {% include other-post.html %}
+				{% endif %}
+
+
+				<!-- If there's a next post, display it using the same markup included from - includes/card.html -->
+				
+				{% if page.next.url %}
+					{% include card.html url=page.next.url image=page.next.image category=page.next.category title=page.next.title
+					description=page.next.description author=page.next.author content=page.next.content %}
+				{% else %}
+					{% include other-post.html %}
+				{% endif %}
+	
+			</div>
+		</div>
+	</aside>
+	
+	{% include footer.html %}
+	</div>
+</body>
