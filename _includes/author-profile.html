@@ -58,7 +58,7 @@
 <main id="site-main" class="site-main outer">
 	<div class="inner">
 		<div class="post-feed">
-			{% for post in site.posts %}
+			{% for post in site.posts reversed %}
 				{% if post.author == writers.user_name %}
 					{% include card.html url=post.url image=post.image category=post.category title=post.title description=post.description author=post.author content=post.content %}
 				{% endif %}
