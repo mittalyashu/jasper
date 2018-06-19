@@ -1,0 +1,27 @@
+{% assign homepage = false %}
+<header class="site-header outer">
+	<div class="inner">
+		{% include navbar.html %}
+		<div class="site-header-content">
+			<h1 class="site-title">{{page.title}}</h1>
+			<h2 class="site-description">
+				{% assign number_of_category_post = 0 %}
+				{% for post in site.categories.[page.category] %}
+				{% assign number_of_category_post=number_of_category_post | plus: 1 %}
+				{% endfor %}
+				A collection of {{number_of_category_post}} posts
+			</h2>
+		</div>
+	</div>
+</header>
+
+<main id="site-main" class="site-main outer">
+	<div class="inner">
+		<div class="post-feed">
+			{% for post in site.categories.[page.category] reversed %}
+				{% assign number_of_category_post=number_of_category_post | plus: 1 %}
+				{% include card.html url=post.url image=post.image category=post.category title=post.title description=post.description author=post.author content=post.content %}
+			{% endfor %}
+		</div>
+	</div>
+</main>
