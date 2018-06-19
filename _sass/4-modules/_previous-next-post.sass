@@ -1,0 +1,116 @@
+.read-next
+	
+	.read-next-card, .read-next-feed
+		display: flex
+
+	.read-next-feed 
+		flex-wrap: wrap
+		margin: 0 -20px
+		padding: 40px 0 0
+
+	.read-next-card
+		position: relative
+		flex: 1 1 300px
+		flex-direction: column
+		overflow: hidden
+		margin: 0 20px 40px
+		padding: 25px
+		color: $white
+		background: #15171a 50%
+		background-size: cover
+		border-radius: 5px
+		box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03)
+
+		.read-next-card-header
+			position: relative
+			z-index: 50
+			padding-top: 20px
+			text-align: center
+
+			.read-next-card-header-sitetitle
+				display: block
+				font-size: .9rem
+				line-height: 1.3em
+				opacity: .8
+
+			.read-next-card-header-title
+				margin: 0
+				padding: 0 20px
+				color: $white
+				font-size: 1.9rem
+				line-height: 1.4
+				letter-spacing: 1px
+
+				a
+					color: $white
+					font-weight: 300
+					text-decoration: none
+
+		.read-next-divider 
+			position: relative
+			display: flex
+			justify-content: center
+			height: 80px
+
+			svg
+				width: 40px
+				fill: transparent
+				stroke: $white
+				stroke-width: .5px
+				stroke-opacity: .65
+
+
+		.read-next-card-content
+			position: relative
+			z-index: 50
+			flex-grow: 1
+			display: flex
+			font-size: 1.7rem
+
+			ul
+				display: flex
+				flex-direction: column
+				margin: 0 auto
+				padding: 0
+				text-align: center
+				list-style: none
+
+				li
+					margin: 0
+					padding: 0
+					font-size: 1.1rem
+					line-height: 1.25
+					font-weight: 200
+					letter-spacing: -.5px
+
+					&:first-of-type
+						a
+							padding-top: 10px
+
+					a
+						display: block
+						padding: 20px 0
+						border-bottom: 1px solid hsla(0,0%,100%,.3)
+						color: $white
+						font-weight: 500
+						vertical-align: top
+						transition: opacity .3s ease
+						letter-spacing: .2px
+
+						&:hover
+							text-decoration: underline
+
+					@media (max-width: 500px)
+						a
+							font-size: 1rem
+
+		.read-next-card-footer
+			position: relative
+			margin: 15px 0 3px
+			text-align: center
+
+			a
+				color: $white
+
+				&:hover
+					text-decoration: underline
