@@ -1,6 +1,6 @@
 # Jasper
 
-[![Chat on Discord](https://i.imgur.com/eGve1kc.png)](https://discordapp.com/invite/JKpSUQQ)
+[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/codecarrot/jasper)
 
 ## Help me! To continue manage this project
 
