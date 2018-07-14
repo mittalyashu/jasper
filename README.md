@@ -1,6 +1,8 @@
 ![Jasper Theme][img-jasper]
 
-[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/codecarrot/jasper)
+---
+
+[![Star on GitLab][img-gitlab]][gitlab] [![Make a donation at Patreon][img-patreon]][patreon] [![Share on Twitter][img-twitter]][twitter] [![Chat on Spectrum][img-spectrum]][spectrum]
 
 ## Help me! To continue manage this project
 
