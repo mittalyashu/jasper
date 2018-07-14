@@ -26,7 +26,7 @@ I've put a lot of time and effort into making **Jasper** project. If you love it
 
 [spectrum]: https://spectrum.chat/codecarrot/jasper
 [patreon]: https://www.patreon.com/mittalyashu
-[twitter]: https://twitter.com/intent/tweet?url=https%3A%2F%2Fgitlab.com%2Fmittalyashu%2Fjasper&via=%40mittalyashu77&text=A%20full-featured%20customisable%20theme%20Casper%20%uD83D%uDC7B&hashtags=jekyllrb%2C%20theme
+[twitter]: https://twitter.com/intent/tweet?url=https%3A%2F%2Fgitlab.com%2Fmittalyashu%2Fjasper&via=mittalyashu77&text=A%20full-featured%20customisable%20theme%20Casper%20👻&hashtags=jekyllrb%2C%20theme
 
 <!-- Images -->
 
