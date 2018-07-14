@@ -8,6 +8,8 @@
 
 I've put a lot of time and effort into making **Jasper** project. If you love it, you can buy me a coffee. I promise it will be a good investment 😉.
 
+**Donate with:** [Patreon][patreon].
+
 <!-- Gitlab links -->
 
 [gitlab]: https://gitlab.com/mittalyashu/jasper
