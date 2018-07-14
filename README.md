@@ -4,7 +4,13 @@
 
 [![Star on GitLab][img-gitlab]][gitlab] [![Make a donation at Patreon][img-patreon]][patreon] [![Share on Twitter][img-twitter]][twitter] [![Chat on Spectrum][img-spectrum]][spectrum]
 
-## Help me! To continue manage this project
+## Copyright & License
+
+Design of the [Jasper theme][gitlab] is based on the [Casper theme][casper] by Ghost team.
+
+Check the [Jasper theme license][gitlab-license].
+
+## Help me! To manage this project
 
 I've put a lot of time and effort into making **Jasper** project. If you love it, you can buy me a coffee. I promise it will be a good investment 😉.
 
