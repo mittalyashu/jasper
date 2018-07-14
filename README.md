@@ -1,4 +1,4 @@
-# Jasper
+![Jasper Theme][img-jasper]
 
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/codecarrot/jasper)
 
