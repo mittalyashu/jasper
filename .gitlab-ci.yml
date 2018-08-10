@@ -13,7 +13,7 @@ test:
   artifacts:
     paths:
     - test
-  except:
+  only:
   - master
 
 pages:
