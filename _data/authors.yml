@@ -1,32 +1,9 @@
 mittalyashu:
   name: Yashu Mittal
   user_name: mittalyashu
-  twitter: mittalyashu77
   image: https://i.imgur.com/0oCcDll.jpg
-  bio: "Founder & CEO at CodeCarrot"
-  link: https://mittalyashu.github.io
-  facebook: https://www.facebook.com/codecarrotinc
-  twitter: https://www.twitter.com/mittalyashu77
-  location: "India"
-
-google:
-  name: Google
-  user_name: google
-  twitter: google
-  image: https://picsum.photos/150/?random
-  bio: "This is a Google"
-  link:
-  facebook: https://www.facebook.com/google
-  twitter: https://www.twitter.com/google
-  location: "Servers"
-
-youtube:
-  name: Youtube
-  user_name: youtube
-  twitter: youtube
-  image: https://picsum.photos/150/?random
-  bio: "This is a YouTube"
-  link:
-  facebook: https://www.facebook.com/youtube
-  twitter: https://www.twitter.com/youtube
-  location: "Servers"
+  bio: Founder & CEO at CodeCarrot
+  link: https://mittalyashu.now.sh/
+  twitter: mittalyashu77
+  gitlab: mittalyashu
+  location: India

@@ -1,10 +1,8 @@
 ---
-layout: post
+layout: page
 title: About
 permalink: /about/
 ---
-
-# About
 
 Jekyll is professional publishing platform designed for modern journalism. This is a demo site of a basic Ghost install to give you a general sense of what a new Ghost site looks like when set up for the first time.
 

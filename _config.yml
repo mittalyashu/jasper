@@ -1,50 +1,42 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Site info
 title: Jasper
-email: yashu@codecarrot.net
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Transform your plain text into static websites and blogs.
-baseurl: "/jasper" # the subpath of your site, e.g. /blog
-logo: "" #"https://jekyllrb.com/img/logo-2x.png"
-cover_image: "assets/images/blog-cover.jpg"
-url: "https://github.com/mittalyashu/jekyll-casper"
-facebook_username: codecarrotinc
-facebook_url: "https://www.facebook.com/codecarrotinc"
-twitter_username: mittalyashu77
-twitter_url: "https://www.twitter.com/codecarrotnet"
-github_username: "mittalyashu"
+logo:
+url: https://gitlab.com/mittalyashu/jasper
+
+# Site variable
+cover_image: assets/images/blog-cover.jpg
 subscribe: true
 tooltip: true
+author_image: false
+author_image_placeholder: image
 
-# Build settings
+# Social media
+facebook_username: codecarrotinc
+twitter_username: codecarrotnet
+disqus: false
+disqus_shortname:
+google_analytics: true
+ga_tracking: UA-123746316-1
+
+# Jekyll settings
+baseurl: /jasper/
 markdown: kramdown
-theme: minima
+theme: jasper-theme
 permalink: /:title
 plugins:
   - jekyll-feed
   - jekyll-paginate
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .git
+  - LICENSE
