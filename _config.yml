@@ -24,7 +24,7 @@ ga_tracking: UA-123746316-1
 baseurl: /jasper/
 markdown: kramdown
 theme: jasper-theme
-permalink: /:title
+permalink: /:title/
 plugins:
   - jekyll-feed
   - jekyll-paginate
