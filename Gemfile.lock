@@ -18,7 +18,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jasper-theme (0.0.2)
       jekyll (~> 3.8)
-    jekyll (3.8.4)
+    jekyll (3.8.6)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -71,7 +71,7 @@ PLATFORMS
 
 DEPENDENCIES
   jasper-theme (~> 0.0.2)
-  jekyll (~> 3.8.4)
+  jekyll (~> 3.8.6)
   jekyll-feed (~> 0.6)
   jekyll-paginate
   tzinfo-data
