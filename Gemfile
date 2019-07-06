@@ -5,7 +5,7 @@ gem "jekyll", "~> 3.8.6"
 gem 'jasper-theme', '~> 0.0.2'
 
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-feed", "~> 0.12"
   gem "jekyll-paginate"
 end
 
